@@ -11,7 +11,7 @@ import {
 } from "@ant-design/icons";
 import { Button, Drawer } from "antd";
 import CustomButton from "@/components/button/CustomButton";
-import Navlogo from "@/assets/img/EMBLEM.svg";
+import Navlogo from "../../assets/img/EMBLEM.svg";
 
 const Header = () => {
   const navigate = useNavigate();
