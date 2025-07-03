@@ -1,0 +1,58 @@
+/* style.css */
+body, html {
+  margin: 0;
+  padding: 0;
+  background-color: #000;
+  color: #fff;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  height: 100%;
+}
+
+/* Main Swiper section */
+.main-swiper {
+  width: 100%;
+  height: auto;
+}
+
+.main-swiper .swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: transparent;
+}
+
+.main-swiper .swiper-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 0.75rem;
+}
+
+/* Thumbnail Swiper section */
+.thumb-swiper {
+  height: auto;
+  padding-top: 10px;
+}
+
+.thumb-swiper .swiper-slide {
+  opacity: 0.4;
+  cursor: pointer;
+  transition: opacity 0.3s ease-in-out;
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+
+.thumb-swiper .swiper-slide-thumb-active {
+  opacity: 1 !important;
+}
+
+.thumb-swiper .swiper-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease-in-out;
+}
+
+.thumb-swiper .swiper-slide:hover img {
+  transform: scale(1.05);
+}
